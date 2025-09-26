@@ -35,43 +35,50 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className=' w-full font-medium leading-6 px-16 max-w-full mx-auto pt-10 '>
+    <footer className='s'>
 
-      <div className=' flex justify-between gap-[160px] '>
-
-        <div className=' max-w-[640px] shrink-0  '>
-          <Image src="/logo.svg" alt="ALX Logo" width={60} height={30} className=' mb-6 ' />
-          <p>ALX is a platform where travelers can discover and book unique, comfortable, and affordable lodging options worldwide. From cozy city apartments and tranquil countryside retreats to exotic beachside villas, ALX connects you with the perfect place to stay for any trip.</p>
-        </div>
-
-        <div className=' ml-auto flex max-w-[790px] w-full justify-between'>
-          {footerLinks.map((section) => (
-
-            <div key={section.title} className=' w-[160px] '>
-              <h3 className=' font-bold text-2xl mb-4 '>{section.title}</h3>
-
-              <ul className=' space-y-2 '>
-                {section.links.map((link) => (
-                  <li key={link.href}>
-                    <Link href={link.href} className=' hover:underline text-base '>{link.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
+      <div className=' h-6 w-full bg-[#34967C] '>
 
       </div>
 
-      <div className=' flex justify-between mt-20 text-[#CACACA]' >
-        <p className=' leading-6 font-medium '>Some hotel requires you to cancel more than 24 hours before check-in. Details <Link href={"/"} className=' text-[#34967C]' >here</Link></p>
 
-        <div className=' flex gap-9 '>
-          <Link href={"/"}>Term of Service</Link>
-          <Link href={"/"}>Policy Service</Link>
-          <Link href={"/"}>Cookie Policy</Link>
-          <Link href={"/"}>Partners</Link>
+      <div className=' bg-[#222222] w-full font-medium leading-6 lg:px-16 px-6 mx-auto pt-10 '>
+
+        <div className=' flex lg:flex-row flex-col justify-between lg:gap-[150px] md:gap-16 gap-8 '>
+
+          <div className=' max-w-[600px]  '>
+            <Image src="/logo.svg" alt="ALX Logo" width={60} height={30} className=' mb-6 ' />
+            <p className=' text-sms '>ALX is a platform where travelers can discover and book unique, comfortable, and affordable lodging options worldwide. From cozy city apartments and tranquil countryside retreats to exotic beachside villas, ALX connects you with the perfect place to stay for any trip.</p>
+          </div>
+
+          <div className=' ml-auto flex max-w-[793px] w-full justify-between flex-wrap '>
+            {footerLinks.map((section) => (
+              <div key={section.title} className=' flex-wrap shrink-0  md:w-[160px] w-[140px] '>
+                <h3 className=' font-bold lg:text-2xl mb-4 '>{section.title}</h3>
+
+                <ul className=' space-y-2 '>
+                  {section.links.map((link) => (
+                    <li key={link.href}>
+                      <Link href={link.href} className=' hover:underline lg:text-base text-xs  '>{link.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+        </div>
+
+        <div className=' flex lg:flex-row flex-col text-center lg:justify-between justify-center lg:mt-20 mt-24  text-[#CACACA] py-4 border-t border-[#444444]  ' >
+
+          <p className=' leading-6 font-medium '>Some hotel requires you to cancel more than 24 hours before check-in. Details <Link href={"/"} className=' text-[#34967C]' >here</Link></p>
+
+          <div className='flex w-full md:max-w-lg mx-auto lg:justify-end gap-10 text-sm '>
+            <Link href={"/"}>Term of Service</Link>
+            <Link href={"/"}>Policy Service</Link>
+            <Link href={"/"}>Cookie Policy</Link>
+            <Link href={"/"} className=' hidden lg:block ' >Partners</Link>
+          </div>
         </div>
       </div>
 
