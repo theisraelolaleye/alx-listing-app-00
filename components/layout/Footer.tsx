@@ -35,14 +35,14 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className='s'>
+    <footer className=''>
 
       <div className=' h-6 w-full bg-[#34967C] '>
 
       </div>
 
 
-      <div className=' bg-[#222222] w-full font-medium leading-6 lg:px-16 px-6 mx-auto pt-10 '>
+      <div className=' bg-[#222222] w-full font-medium leading-6 lg:px-16 px-6 mx-auto pt-10 pb-14 md:pb-5 lg:pb-6 '>
 
         <div className=' flex lg:flex-row flex-col justify-between lg:gap-[150px] md:gap-16 gap-8 '>
 
@@ -69,11 +69,13 @@ const Footer = () => {
 
         </div>
 
-        <div className=' flex lg:flex-row flex-col text-center lg:justify-between justify-center lg:mt-20 mt-24  text-[#CACACA] py-4 border-t border-[#444444]  ' >
+        <div className=' flex flex-col lg:flex-row justify-center lg:justify-between md:gap-y-10 gap-y-7 text-center border-t border-[#444444] mt-24 md:mt-14 lg:mt-20 pt-5 md:pt-11 lg:pt-4   ' >
+          {/* <div className=' flex lg:flex-row flex-col text-center lg:justify-between justify-center lg:mt-20 mt-24  text-[#CACACA] py-4 border-t border-[#444444]  ' > */}
 
           <p className=' leading-6 font-medium '>Some hotel requires you to cancel more than 24 hours before check-in. Details <Link href={"/"} className=' text-[#34967C]' >here</Link></p>
 
-          <div className='flex w-full md:max-w-lg mx-auto lg:justify-end gap-10 text-sm '>
+          <div className=' flex justify-center gap-6 md:gap-9 text-xs md:text-base  '>
+            {/* <div className='flex w-full md:max-w-lg mx-auto lg:justify-end gap-10 text-sm '> */}
             <Link href={"/"}>Term of Service</Link>
             <Link href={"/"}>Policy Service</Link>
             <Link href={"/"}>Cookie Policy</Link>
