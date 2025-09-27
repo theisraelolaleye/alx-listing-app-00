@@ -2,6 +2,9 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import AccomodationType from "../components/layout/AccomodationType";
+import { ACCOMODATIONTYPES } from "../constants";
+import Link from "next/link"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +18,8 @@ const geistMono = Geist_Mono({
 
 export default function Home() {
   return (
-    <div>
-      Home
+    <div className=" flex">
+
 
     </div>
   );

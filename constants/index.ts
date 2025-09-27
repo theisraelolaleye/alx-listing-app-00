@@ -360,3 +360,53 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     discount: ""
   }
 ];
+
+
+export const ACCOMODATIONTYPES = [
+  {
+    image: "/room.svg",
+    title: "Rooms"
+  },
+  {
+    image: "/mansion.svg",
+    title: "Mansion"
+  },
+  {
+    image: "/countryside.svg",
+    title: "Countryside"
+  },
+  {
+    image: "/tropical.svg",
+    title: "Tropical"
+  },
+  {
+    image: "/new.svg",
+    title: "New"
+  },
+  {
+    image: "/pool.svg",
+    title: "Amazing Pool"
+  },
+  {
+    image: "/beach.svg", title: "Beach house"
+  },
+  {
+    image: "/Island.svg", title: "island"
+  },
+  {
+    image: "/camping.svg", title: "Camping"
+  },
+  {
+    image: "/apartment.svg", title: "Apartment"
+  },
+  {
+    image: "/house.svg", title: "House"
+  },
+  {
+    image: "/lakefront.svg", title: "Lakefront"
+  },
+  { image: "/cabin.svg", title: "Cabin" },
+  { image: "/cabin.svg", title: "Cabin" },
+  { image: "/cabin.svg", title: "Cabin" },
+  // { image: "/cabin.svg", title: "Cabin" }
+];

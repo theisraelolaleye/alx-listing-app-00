@@ -542,10 +542,10 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$g
 ;
 function Home() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        children: "Home"
+        className: " flex"
     }, void 0, false, {
         fileName: "[project]/pages/index.tsx",
-        lineNumber: 18,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 }
