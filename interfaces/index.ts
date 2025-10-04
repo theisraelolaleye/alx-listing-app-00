@@ -8,9 +8,9 @@ interface CardProps {
   content: string;
 }
 
-
-interface PropertyProps{
+export interface PropertyProps{
   name: string;
+  description: string;
   address: {
     state: string;
     city: string;
